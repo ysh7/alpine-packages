@@ -15,7 +15,7 @@ depend() {
 checkconf() {
 	ebegin "Testing configuration: "
 		${DAEMON} --test-conf \
-		--conf-file=${CONF_FILE} \
+		--conf-file=${CONFFILE} \
 		>/dev/null 2>&1
 	eend $?
 }
